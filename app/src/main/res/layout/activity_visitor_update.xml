@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/io"
+    tools:context=".Activities.VisitorUpdateActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@drawable/header"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title=" ">
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Visitor Detail"
+            android:textColor="#2C1C57"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Show QR "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/btn"
+            android:background="@drawable/btn_4"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Visitor Batch"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"
+            android:textColor="#627064" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/iv"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="firstname"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+            android:hint="First Name"
+            android:textSize="14sp"
+            android:id="@+id/et_vfirstname"
+            android:background="@drawable/btn_white"
+            android:textColor="#3E4755"
+            android:capitalize="words"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="lastname"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:singleLine="true"
+            android:background="@drawable/btn_white"
+            android:hint="Last Name"
+            android:capitalize="words"
+            android:textSize="14sp"
+            android:id="@+id/et_vlastname"
+            android:textColor="#3E4755" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:layout_marginLeft="30dp"
+                android:textColor="#2C1C57"
+                />
+
+            <RadioGroup
+                android:id="@+id/gender_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#627064"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#627064"
+                    android:text="Male"/>
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#627064"
+                    android:text="Female"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Email id"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_white"
+            android:hint="Email id"
+            android:capitalize="words"
+            android:textSize="14sp"
+            android:id="@+id/et_vemail"
+            android:textColor="#3E4755" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="contact number"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:singleLine="true"
+            android:hint="Contact Number"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:background="@drawable/btn_white"
+            android:id="@+id/et_vmob"
+            android:textColor="#3E4755" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="city"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+        <EditText
+            android:id="@+id/et_vcity"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_white"
+            android:hint="City"
+            android:capitalize="words"
+            android:singleLine="true"
+            android:textColor="#3E4755"
+            android:textSize="14sp" />
+
+<!--
+        <Spinner
+
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+        </Spinner>
+-->
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="upload profile pic"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/forget"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_upload"/>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:id="@+id/img_upload_preview" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Update Visitor "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/btn_visit_update"
+            android:background="@drawable/btn_2"
+            />
+
+        <Button
+            android:id="@+id/btn_visit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_4"
+            android:text="Add Visit"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl1"
+            tools:context=".Activities.VisitorUpdateActivity">
+
+
+            <!--android:text="No visitor found on this date"-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="23sp"
+                android:textColor="#EB2525"
+                android:id="@+id/tv_no_visit"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_no_visit"
+                android:id="@+id/mRecyclerView"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/io"
+    tools:context=".Activities.VisitDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_detail"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Visit Details"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Purpose"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="08dp"
+            android:hint="ex-enquiry"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:capitalize="words"
+            android:id="@+id/et_purpose"
+            android:background="@drawable/btn_white"
+            android:textColor="#3E4755" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Meet to Whom"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+      <!--  <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="149dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />-->
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="match_parent"
+            tools:context=".spinner.SpinnerMain">
+
+            <Spinner
+
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+        </RelativeLayout>
+
+        <!--<EditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Director"
+            android:singleLine="true"
+            android:id="@+id/et_meet_to"
+            android:background="@drawable/btn_white"
+            android:textColor="#3E4755" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Item Carried"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="08dp"
+            android:hint="Cariied with item"
+            android:singleLine="true"
+            android:capitalize="words"
+            android:textSize="14sp"
+            android:id="@+id/et_item_carried"
+            android:background="@drawable/btn_white"
+            android:textColor="#3E4755" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Visit Date"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_marginTop="08dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/date"
+            android:hint="Select Date..."
+            android:textColor="#627064"
+            android:textColorHint="#2C1C57"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Request Visit "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/btn_visit_req"
+            android:background="@drawable/btn_2"
+            />
+    </LinearLayout>
+
+
+
+
+</ScrollView>

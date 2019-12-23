@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/front"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.CurrentVisitorActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@drawable/header"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name">
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lin1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/header"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Visitor Name"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Whom to meet"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Purpose"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/io"
+        android:layout_marginTop="110dp"
+        />
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Visitors found"
+        android:textSize="23sp"
+        android:textColor="#EB2525"
+        android:id="@+id/tv_visitor_user"
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

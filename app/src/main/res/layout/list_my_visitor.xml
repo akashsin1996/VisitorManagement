@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/list1"
+    android:background="@drawable/btn_white"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Visitor id"
+        android:textColor="#181717"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/tv_Visitor_id"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="visit date"
+        android:gravity="center"
+        android:textColor="#181717"
+        android:layout_weight="1"
+        android:id="@+id/tv_visit_date"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Purpose"
+        android:gravity="center"
+        android:textColor="#181717"
+        android:layout_weight="1"
+        android:id="@+id/tv_purpose"/>
+   <!-- <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:gravity="center"
+        android:textColor="#A59191"
+        android:layout_weight="1"
+        android:id="@+id/tv_status"/>-->
+
+
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/io"
+    android:orientation="vertical"
+    tools:context=".Activities.StaffUpdateActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+
+            android:background="@drawable/header"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Employee Name"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#2C1C57" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="14sp"
+                android:layout_marginRight="30dp"
+                android:hint="Emp Name"
+                android:capitalize="words"
+                android:singleLine="true"
+                android:background="@drawable/btn_white"
+                android:id="@+id/et_emp_name"
+                android:textColor="#3E4755" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Deptartment Name"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#2C1C57" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:capitalize="words"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Dept Name"
+                android:singleLine="true"
+                android:id="@+id/et_dept_name"
+                android:textSize="14sp"
+                android:background="@drawable/btn_white"
+                android:textColor="#3E4755" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Designation"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#2C1C57" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:capitalize="words"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_white"
+                android:hint="Designation"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:id="@+id/et_designation"
+                android:textColor="#3E4755" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#2C1C57"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/gender_radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#627064"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#3E4755"
+                        android:text="Male"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#3E4755"
+                        android:text="Female"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Email id"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#2C1C57" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="30dp"
+                android:singleLine="true"
+                android:capitalize="words"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_white"
+                android:hint="Email id"
+                android:id="@+id/et_staff_email"
+                android:textSize="14sp"
+                android:textColor="#3E4755" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="confirm email id"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#2C1C57" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:capitalize="words"
+                android:hint="Confirm Email id"
+                android:singleLine="true"
+                android:background="@drawable/btn_white"
+                android:id="@+id/et_staff_cemail"
+                android:textSize="14sp"
+                android:textColor="#3E4755" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="contact number"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#2C1C57" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="Contact Number"
+                android:capitalize="words"
+                android:background="@drawable/btn_white"
+                android:id="@+id/et_staff_mob"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#3E4755" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="update"
+                android:textAllCaps="false"
+                android:id="@+id/btn_Staff_update"
+                android:textColor="#fff"
+                android:background="@drawable/btn_2"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_home1"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_visit"
+            android:icon="@drawable/ico_add_visit"
+            android:title="Add Visit" />
+
+        <item
+            android:id="@+id/nav_review_visitor"
+            android:icon="@drawable/ic_home1"
+            android:title="Review Visitor" />
+
+
+
+
+    </group>
+
+    <item android:title="Administration"
+        android:id="@+id/nav_administration">
+        <menu>
+            <item
+                android:id="@+id/nav_manage_users"
+                android:icon="@drawable/ico_manage_user"
+                android:title="Manage System User" />
+
+            <item
+                android:id="@+id/nav_manage_staff"
+                android:icon="@drawable/ico_manage_staff"
+                android:title="Manage Staff" />
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/icon_profile"
+                android:title="Profile" />
+
+        </menu>
+    </item>
+
+    <item android:title="Reports"
+        android:id="@+id/nav_rp">
+        <menu>
+            <item
+                android:id="@+id/nav_completed"
+                android:icon="@drawable/icon_done"
+                android:title="Completed" />
+            <item
+                android:id="@+id/nav_current"
+                android:icon="@drawable/icon_monitor"
+                android:title="Curent Premises" />
+
+        </menu>
+    </item>
+
+    <item android:title="Information">
+        <menu>
+
+            <item
+                android:id="@+id/nav_pdf"
+                android:icon="@drawable/icon_print"
+                android:title="Print(pdf)" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/icon_exit"
+                android:title="Exit" />
+
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/icon_exit"
+                android:title="Contact Us" />
+
+        </menu>
+    </item>
+
+
+
+</menu>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llScroll"
+    android:background="@drawable/io"
+    tools:context=".Activities.PrintActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_pdf">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_1">
+
+        <TextView
+            android:id="@+id/tv_slip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visitor Slip"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="31dp"
+            android:id="@+id/ll_2">
+
+            <Button
+                android:id="@+id/btn_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Print"
+                android:textAllCaps="false"
+                android:layout_marginTop="39dp"
+                android:layout_marginLeft="74dp"
+                />
+
+            <Button
+                android:id="@+id/btn_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pdf"
+                android:textAllCaps="false"
+                android:layout_marginTop="39dp"
+                android:layout_marginLeft="44dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+            android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sisoft Technologies Pvt ltd."
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Src E7-E8 Gyan Khand-3 indirapuram Gzb."
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="0dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9598588916"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="0dp"
+            />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="22dp"
+            android:id="@+id/ll_3">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_background"
+                android:padding="23dp"
+                android:layout_marginLeft="23dp"
+                android:id="@+id/img_dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:padding="22dp"
+                    android:layout_marginLeft="43dp"
+                    android:id="@+id/img_qr"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visitor Name           :"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Visitor Name"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_visitor_name"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile                       :"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_mob"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whom to Meet         :"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Whom to Meet"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_meet_to"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Visit             :"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Date Of Visit "
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_date"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_4"
+            android:layout_marginTop="79dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Office-In-Charge"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_office"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visitor Sign"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginLeft="191dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_visitor_sign"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</ScrollView>

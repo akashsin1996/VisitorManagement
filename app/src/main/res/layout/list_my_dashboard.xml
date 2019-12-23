@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/lin1"
+    android:background="@drawable/btn_white"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="firstname"
+        android:textColor="#181717"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/tv_firstname"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="city"
+        android:gravity="center"
+        android:textColor="#181717"
+        android:layout_weight="1"
+        android:id="@+id/tv_city"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="mob"
+        android:gravity="center"
+        android:textColor="#181717"
+        android:layout_weight="1"
+        android:id="@+id/tv_mob"/>
+
+    <!--<TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/oval_green"
+        android:gravity="center"
+        android:textColor="#A59191"
+        android:id="@+id/tv_icon"/>
+-->
+
+</LinearLayout>

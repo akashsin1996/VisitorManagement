@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/io"
+    android:orientation="vertical"
+    tools:context=".Activities.VisitorStatusActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+
+            android:background="@drawable/header"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll2_detail"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Visit Details"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+        <Button
+            android:id="@+id/btn_slip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visitor Slip"
+            android:layout_marginLeft="249dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="21dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Visitor Name"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="08dp"
+            android:hint=" "
+            android:textSize="14sp"
+            android:id="@+id/tv_visitor_name"
+            android:background="@drawable/btn_white"
+            android:textColor="#3E4755" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Purpose"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="08dp"
+            android:hint=" "
+            android:textSize="14sp"
+            android:id="@+id/tv_purpose"
+            android:background="@drawable/btn_white"
+            android:textColor="#3E4755" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Meet to Whom"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="08dp"
+            android:hint=" "
+            android:textSize="14sp"
+            android:id="@+id/tv_meet_to"
+            android:background="@drawable/btn_white"
+            android:textColor="#3E4755" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Item Carried"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="08dp"
+            android:hint=" "
+            android:textSize="14sp"
+            android:id="@+id/tv_item_carried"
+            android:background="@drawable/btn_white"
+            android:textColor="#3E4755" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Entry Date and Time"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+        <TextView
+            android:id="@+id/tv_entry_date_time"
+            android:layout_marginTop="08dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/date"
+            android:hint="Select Date..."
+            android:textColor="#627064"
+            android:textColorHint="#2C1C57"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Exit Date and Time"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#2C1C57" />
+
+        <TextView
+            android:id="@+id/tv_exit_date_time"
+            android:layout_marginTop="08dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/date"
+            android:hint="Select Date..."
+            android:textColor="#627064"
+            android:textColorHint="#2C1C57"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Visit CheckIn "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/btn_visit_checkin"
+            android:background="@drawable/btn_2"
+            />
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

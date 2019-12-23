@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/list1"
+    android:background="@drawable/btn_white"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Admin id"
+        android:textColor="#181717"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/tv_admin_id"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:gravity="center"
+        android:textColor="#181717"
+        android:layout_weight="1"
+        android:id="@+id/tv_user_name"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Role"
+        android:gravity="center"
+        android:textColor="#181717"
+        android:layout_weight="1"
+        android:id="@+id/tv_role"/>
+   <!-- <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:gravity="center"
+        android:textColor="#A59191"
+        android:layout_weight="1"
+        android:id="@+id/tv_psw"/>-->
+
+
+
+</LinearLayout>
